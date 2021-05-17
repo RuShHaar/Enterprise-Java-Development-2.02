@@ -1,5 +1,7 @@
 package Task2;
 
+import java.util.Arrays;
+
 public class ForbiddenStrings {
 
     private static String[] keywords = {"abstract", "continue", "for", "new", "switch", "assert", "default", "goto", "package",
@@ -10,14 +12,15 @@ public class ForbiddenStrings {
             "long", "strictfp", "volatile", "const", "float", "native", "super", "while"};
 
 
-    //public boolean isForbidden(String sentence){
+    public boolean isForbidden(String sentence) {
+        boolean isIn = false;
+        for (int i = 0; i < keywords.length; i++) {
 
-    /*if(sentence.contains("ABC") return true;
-
-        else{
-            return false;
+            if (sentence.contains(keywords[i])) {
+                isIn = true;
+                break;
+            }
         }
-
-
-    }*/
+        return isIn;
+    }
 }
