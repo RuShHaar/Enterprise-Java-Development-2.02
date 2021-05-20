@@ -13,10 +13,10 @@ public class ForbiddenStrings {
 
 
     public boolean isForbidden(String sentence) {
+        String[] individualWords = sentence.split(" ");
         boolean isIn = false;
-        for (int i = 0; i < keywords.length; i++) {
-
-            if (sentence.contains(keywords[i])) {
+        for (int i = 0; i < individualWords.length; i++) {
+            if (Arrays.asList(keywords).contains(individualWords[i])) {
                 isIn = true;
                 break;
             }
