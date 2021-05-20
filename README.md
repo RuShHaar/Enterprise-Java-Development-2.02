@@ -5,6 +5,10 @@ Hiweis: packages immer klein geschrieben, also "classes" und nicht "Classes". Me
 1 - Integer getOdds - Perfekt
 
 2- Keywords- Funktioniert alles, ausser dass deine Methode nicht erkennt ob das Keyword einzel oder Teil eines anderen Wortes ist.
+
+![image](https://user-images.githubusercontent.com/27894266/119015006-6d976680-b990-11eb-8439-9f5a045037e8.png)
+
+
 Eine Form die auch andere der Bootcampen benutzt haben ist das Keyword entweder mit Leerzeichen zu umhüllen oder ein ein Array aus dem input zu machen. Hier ein Beispiel
 
  ```java
